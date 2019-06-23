@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body onload="cityPoz()">
+ 
+                <a href="http://127.0.0.1:5500/poznan.html"><img src="strzalka1.png" id="strzalka" alt="wróć"></a>
+               
+                <img src="jumbo.jpeg" alt=""id='jumbo'>
+          
+            <div id="log"></div>
+                 
+                           
+      
+        <div id="poznan" class='box' >Poznań</div>
+
+       
+                <p id='seans'></p>
+           <p id="jeden" ></p>
+           <p id="jeden" ></p>
+           <p id="jeden" ></p>
+           <p id="jeden"></p></br></br>
+       
+          
+           <div id="containerPoz">
+                   <div id="kurier"onclick="kurier()" ></div>
+                 
+                   <div id="marwel"onclick="marwel()"></div>
+                   <div id="ciemno"onclick="ciemno()"></div>
+                   </div>
+                  
+                   
+                   <!-- <div id="rezerwuj">
+
+
+                <div class='rezerwuj' onclick="cinemaPoznan() ,kurier()">Rezerwuj</div>  
+                <div class='rezerwuj' onclick="cinemaPoznan() ,marwel()">Rezerwuj</div>
+                <div class='rezerwuj' onclick="cinemaPoznan() ,ciemno()">Rezerwuj</div>
+                   </div> -->
+
+                   <!-- <a href="http://127.0.0.1:5500/logowanie.html" id="kup"></a> -->
+                   <!-- <a href = "http://127.0.0.1:5500/wybranyfilm_poz.html" id="dalej" ></a> -->
+               
+
+
+                   <div id="container">
+                        <div class="row">
+                                <div class="col-sm-6">
+                                      
+                   <div id="wybranyfilm"></div>
+                   <div id="godziny">
+                        <span id="pierwsza line" onclick="cinemaPoznan(), pierwsza()">11:00</span>
+                        <span id="druga line" onclick="cinemaPoznan(), druga()">13:00</span>
+                        <span id="trzecia line" onclick="cinemaPoznan(), trzecia()">19:00</span>
+                       <div id="godzina"></div>
+                    </div>
+                    
+                   <div id="wybranaGodzina"></div>
+                   <div id="cena"></div>
+                     </div>
+                       
+                        
+                          <div class="col-sm-6">
+                          
+                   <div id="div2"></div>
+                   <div id="rezerwuje"></div>
+                   <div id="kup"></div>
+                   <div id="miejscezero"></div>
+                   <div class='wrapper1'>
+                        
+                       
+                     <div id="zalogowany"></div>  
+                        
+                         <input type="password" name="name" id="name" placeholder="wpisz hasło" >
+                       
+                       
+                       
+                         <input type="text" name="email" id="email" placeholder="wpisz E-mail"/> 
+                       
+                       
+                         <input type="submit" value="zaloguj się" id='button' onclick="validate()" >
+                        
+                       
+                         <br>
+                         <div id="test"></div>
+                         
+                    
+  </div>
+                        </div>
+                        </div>
+                        
+                   </div>
+                  
+              
+                 
+                  
+                  <div id="danedopodsumy"></div>
+                   <!-- <a href="http://127.0.0.1:5500/logowanie.html" id="kup"></a> -->
+               
+              
+                
+           
+               <!-- <div id="podsuma"></div> -->
+           
+               <div id="napis"></div><br>
+             
+               </div>
+            <div id="poz"></div>
+
+
+<!-- wybor godziny -->
+
+
+      
+            <svg width="6" height="6" id="kwadrat"></svg>
+
+         
+        <script src="json.js"></script>
+     
+        <script src="poznan.js"></script>
+        <script src="logowanie.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,338 @@
+.ukryj {
+    display: none
+}
+
+.pokaz {
+    display: initial
+}
+
+
+body,
+html {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+    background-color: rgb(165, 206, 245);
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* background-image: url( corgi.jpeg);
+    background-repeat: no-repeat; */
+
+}
+
+#tlo img {
+    width: 90%;
+    
+
+
+}
+#tlo{
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+    grid-gap: 10px;
+   
+
+}
+
+#strzalka {
+    max-width: 5%;
+    position: absolute;
+    left: 0;
+}
+
+
+.wrapper {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 10px;
+    font-size: 1.8rem;
+
+
+
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper a:hover {
+    color: rgb(40, 119, 238);
+}
+
+#jakwytresowac2 {
+    max-width: 100%;
+    height: auto;
+
+
+
+}
+
+.noactive {
+    opacity: .5;
+}
+
+.active {
+    width: 80%;
+}
+
+/* #marwel2 {
+    max-width: 80%;
+    height: auto;
+    float: left;
+
+
+} */
+
+
+#container {
+    max-width: 100%;
+    padding: 0;
+}
+
+#jeden {
+    font-size: 24px;
+}
+
+#jumbo {
+
+    max-width: 100%;
+    height: auto;
+    left: 0;
+    /* position: absolute;
+            z-index: 0; */
+}
+#log{
+   
+    position: absolute;
+  
+    top:10px;
+    left:80%;
+    font-size: 1.1rem;
+}
+#log img{
+    max-width: 15%;;
+}
+
+
+#test {
+
+    padding-top: 30px;
+    font-size: 22px;
+    color: red;
+
+
+}
+
+#seans {
+    font-size: 22px;
+    height: 60px;
+
+}
+
+.wrapper1 {
+
+
+    visibility: hidden;
+
+    /* display: grid;
+            
+             grid-template-columns: 24% 24% 24% 24%;
+             grid-gap: 10px; */
+    /* margin-top:20%; */
+
+}
+
+
+#opis {
+    z-index: 2;
+}
+
+#popkorn {
+    max-width: 20%;
+    position: absolute;
+    left: 10%;
+}
+
+
+
+#zalogowany img{
+max-width: 10%;
+margin-top: 30px;
+}
+#zalogowany{
+    margin-top:70px;
+    font-style: italic;
+    font-size: 18px;
+  
+}
+
+
+
+
+/* button{
+            border: 1px solid gray;
+        } */
+img {
+
+    max-width: 80vh;
+    height: auto;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+#containerPoz {
+    width: 80%;
+    margin: 0 auto;
+
+
+
+    /* display:grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-gap:20px; 
+            position: relative;
+            padding-bottom: 20px;
+            z-index: 1;
+            */
+
+}
+input{
+    width:150px;
+    padding: 5px;
+    height: 30px;
+    font-size: 14px;
+
+}
+input#button{
+    cursor: pointer;
+    width:100px;
+    height: 50px;
+}
+
+#containerPoz img {
+
+    float: left;
+
+    padding: 1%;
+
+}
+
+#rezerwuj {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+    position: relative;
+}
+
+#welcome {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+/* #podsumowanie {
+    padding-top: 3%;
+} */
+
+
+#containerPoz img {
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* #containerPoz img:hover{
+            width: 40%;
+            height: auto;
+            cursor: pointer;
+        }  
+        */
+
+.box {
+    border-bottom: solid 1px rgb(87, 128, 240);
+    font-size: 36px;
+    color: red;
+}
+
+.box:hover {
+    color: rgb(95, 22, 22);
+    font-weight: 700;
+
+}
+
+
+
+/* #kinocena{ */
+/* display:grid;
+            grid-template-columns: 60% 20%;
+} */
+span {
+    padding: 20px 10px;
+    font-size: 1.1em;
+
+}
+
+#all {
+    visibility: hidden;
+
+}
+
+#cena {
+
+
+
+    font-size: 18px;
+
+
+}
+
+
+#napis {
+    font-size: 1.3rem;
+    font-style: italic;
+
+}
+
+#wybranyfilm {
+    font-size: 26px;
+   
+    margin: 0px 0;
+}
+
+#kup {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    margin-top: 20px;
+   cursor: pointer;
+
+}
+#godziny{
+    visibility: hidden;
+    font-size: 26px;
+
+   
+}
+span:hover{
+    color:rgb(87, 128, 240);
+    cursor: pointer;
+}
+/* #kup:hover {
+    color: blue;
+    font-weight: 800;
+} */
+@media screen and (max-width: 840px) {
+    img {
+      max-width: 20%;
+      height: auto;
+    }
+  }
+ 
