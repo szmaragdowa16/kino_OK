@@ -83,7 +83,7 @@ function kurier() {
 
 
   document.getElementById('wybranyfilm').innerHTML = " Wybrałeś film: KURIER" 
-  document.getElementById('kurier').style.opacity = "1"
+
   
   document.getElementById('marwel').style.display="none"
 document.getElementById('ciemno').style.display="none"
@@ -140,7 +140,7 @@ kup.addEventListener("click", function(){
     document.querySelector('.wrapper1').style.visibility =  "visible"
 
     document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+    document.getElementById('kupbilet').innerHTML="Zaloguj sie, aby kupić bilet/y"
 })
 
 }
@@ -194,7 +194,7 @@ function cinemaPoznan() {
     document.getElementById("kwadrat").style.display = "none"
 
     document.getElementById("div2").innerHTML = napis;
-    document.getElementById("napis").innerHTML = "Kliknij i wybierz miejsce";
+    document.getElementById("napis").innerHTML = "wybierz miejsce";
     document.getElementById("napis").style.fontSize = "1.3em"
 
 

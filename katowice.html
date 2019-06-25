@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
+
 <body onload="cityKat()">
 
-        <a href="http://127.0.0.1:5500/katowice.html"><img src="strzalka1.png" id="strzalka" alt="wróć"></a>
-        <img src="jumbo.jpeg" alt=""id='jumbo'>
-        <div id="log"></div>
-       
-                <!-- <div id='container'>
+    <a href="http://127.0.0.1:5500/katowice.html"><img src="strzalka1.png" id="strzalka" alt="wróć"></a>
+    <img src="jumbo.jpeg" alt="" id='jumbo'>
+    <div id="log"></div>
+
+    <!-- <div id='container'>
                                 <div id="zalogowany"></div>
                             <div class='wrapper1'>
                                     <div id="test"></div>
@@ -32,81 +34,107 @@
                                    
                                     
                                 </div>  -->
-      
-        <div id="kat" class='box' >Katowice</div>
 
-        <div id= city_choose >
-                <p id='seans'></p>
-           <p id="jeden" ></p>
-           <p id="jeden" ></p>
-           <p id="jeden" ></p>
-           <p id="jeden"></p></br></br>
-            </div>
-          
-           <div id="containerPoz">
-                <div id="corgi" onclick="corgi()"></div>
-                <div id="mia" onclick="mia()"></div>
-                <div id="jakwytresowac1" onclick="jakwytresowac1()"></div>
-           
-         
-                   </div>
-   
-                   <div id="podsumowanie">
+    <div id="kat" class='box'>Katowice</div>
+
+    <div id=city_choose>
+        <p id='seans'></p>
+        <p id="jeden"></p>
+        <p id="jeden"></p>
+        <p id="jeden"></p>
+        <p id="jeden"></p></br></br>
+    </div>
+
+    <div id="containerPoz">
+        <div id="corgi" onclick="corgi()"></div>
+        <div id="mia" onclick="mia()"></div>
+        <div id="jakwytresowac1" onclick="jakwytresowac1()"></div>
 
 
-   
-                        <div id="wybranyfilm"></div>
-                        <div id="wybranaGodzina"></div>
-                        <br>
-                        <div id="cena"></div>
-                        <br>
-                    
-                       <div id="miejscezero"></div>
-                       <div class='wrapper1'>
-                            <div id="godziny">
-                                    <span id="pierwsza line" onclick="cinemaKat(), pierwsza()">11:00</span>
-                                    <span id="druga line" onclick="cinemaKat(), druga()">16:00</span>
-                                    <span id="trzecia line" onclick="cinemaKat(), trzecia()">21:00</span>
-                                   <div id="godzina"></div>
-                                </div>
-                           
-                         <div id="zalogowany"></div>  
-                            
-                             <input type="password" name="name" id="name" placeholder="wpisz hasło" >
-                           
-                           
-                           
-                             <input type="text" name="email" id="email" placeholder="wpisz E-mail"/> 
-                           
-                           
-                             <input type="submit" value="zaloguj się" id='button' onclick="validate(), makeUpperCase(v)" >
-                            
-                           
-                             <br>
-                             <div id="test"></div>
-                             
-                        
-      </div>
-                       
-                       <div id="danedopodsumy"></div>
-                        <!-- <a href="http://127.0.0.1:5500/logowanie.html" id="kup"></a> -->
-                     <div id="kup"></div>
-                     <div id="rezerwuje"></div>
-                     </div>
-                
-                    <!-- <div id="podsuma"></div> -->
-                
-                    <div id="napis"></div><br>
-                   
-                    <div id="div2"></div>
-                 
-                 <div id="poz"></div>
-                 <svg width="" height="" id="kwadrat"></svg>
+    </div>
+
+    <div id="podsumowanie">
+
+
      
-             <script src="json.js"></script>
-          
-             <script src="katowice.js"></script>
-             <script src="logowanie.js"></script>
+
+            <div id="wybranyfilm"></div>
+            <div id="wybranaGodzina"></div>
+            <div id="godziny">
+                <span id="pierwsza line" onclick="cinemaKat(), pierwsza()">11:00</span>
+                <span id="druga line" onclick="cinemaKat(), druga()">13:00</span>
+                <span id="trzecia line" onclick="cinemaKat(), trzecia()">19:00</span>
+                <div id="godzina"></div>
+            </div>
+
+
+            <div id="cena"></div>
+        </div>
+
+
+    
          
+            <div id="rezerwuje"></div>
+            <div id="napis"></div><br>
+            <div id="kup"></div>
+            <div id="miejscezero"></div>
+            <div id="div2"></div>
+
+
+
+           
+            <div id="kupbilet"></div>
+          
+
+
+            <div class='wrapper1'>
+
+
+
+                <div id="zalogowany"></div>
+
+                <input type="password" name="name" id="name" placeholder="wpisz hasło">
+
+
+
+                <input type="text" name="email" id="email" placeholder="wpisz e-mail" />
+
+
+
+                <button type="button" class="btn btn-primary" value="zaloguj się" id='button'
+                    onclick="validate()">zaloguj
+                    się</button>
+
+                <br>
+                <div id="test"></div>
+
+
+
+</div>
+
+
+
+
+<div id="danedopodsumy"></div>
+<!-- <a href="http://127.0.0.1:5500/logowanie.html" id="kup"></a> -->
+
+
+
+
+<!-- <div id="podsuma"></div> -->
+
+
+
+</div>
+<div id="poz"></div>
+
+    <svg width="" height="" id="kwadrat"></svg>
+
+    <script src="json.js"></script>
+
+    <script src="katowice.js"></script>
+    <script src="logowanie.js"></script>
+
 </body>
+
 </html>

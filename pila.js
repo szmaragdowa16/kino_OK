@@ -46,7 +46,7 @@
             document.getElementById("druga line").style.visibility="hidden"
            
             document.getElementById("trzecia line").style.visibility="hidden"
-            document.getElementById('wybranaGodzina').innerHTML = " godzina 10:00" 
+            document.getElementById('wybranaGodzina').innerHTML = " godzina 11:00" 
         
         }
         function druga(){
@@ -54,14 +54,14 @@
             document.getElementById("druga line").style.visibility="hidden"
             document.getElementById("pierwsza line").style.visibility="hidden"
             document.getElementById("trzecia line").style.visibility="hidden"
-            document.getElementById('wybranaGodzina').innerHTML = " godzina 17:00"
+            document.getElementById('wybranaGodzina').innerHTML = " godzina 13:00"
         }
         function trzecia(){
           
             document.getElementById("trzecia line").style.visibility="hidden"
             document.getElementById("druga line").style.visibility="hidden"
             document.getElementById("pierwsza line").style.visibility="hidden"
-            document.getElementById('wybranaGodzina').innerHTML = "  godzina 22:00"
+            document.getElementById('wybranaGodzina').innerHTML = "  godzina 19:00"
         }
         
         
@@ -180,25 +180,40 @@
 
         element.addEventListener("click", function () {
             if (element.style.backgroundColor == "red") {
+                document.getElementById("pierwsza line").style.visibility="hidden"
+              document.getElementById("druga line").style.visibility="hidden"
+             
+              document.getElementById("trzecia line").style.visibility="hidden"
+
                 element.style.backgroundColor = "transparent"
                 sum = sum - 15;
                 var liczba=sum/15;
-                if(liczba>1){
-                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsca"
-                    var napis2= "Rezerwuję te miejsca"
+                if(liczba==1){
+                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsce"
+                    var napis2= "Rezerwuję to miejsce"
                     var napis3=""
                 }
+                
+
+
                 else if(liczba==0){
                     var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsc"
                     var napis3= "Wybierz miejsce"
                     var napis2=""
                   
                 }
+                else if(liczba<5){
+                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsca"
+                    var napis2= "Rezerwuję te miejsca"
+                    var napis3=""
+                 
+
+                }
 
 
                 else{
-                    var napis1= "Wybrałeś" + " " + liczba + " " + "miejsce" 
-                    var napis2= "Rezerwuję to miejsce"
+                    var napis1= "Wybrałeś" + " " + liczba + " " + "miejsc" 
+                    var napis2= "Rezerwuję te miejsca"
                     var napis3=""
                 }
                
@@ -209,6 +224,7 @@
                 document.getElementById("wrapper1").style.visibility = "visible"
                
             } else {
+                
         
                 element.style.backgroundColor = "red"
                 
@@ -216,9 +232,9 @@
                
                 sum = sum + 15;
                 var liczba=sum/15;
-                if(liczba>1){
-                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsca"
-                    var napis2= "Rezerwuję te miejsca"
+                if(liczba==1  ){
+                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsce"
+                    var napis2= "Rezerwuję to miejsce"
                     var napis3=""
                 }
                 else if(liczba==0){
@@ -228,11 +244,18 @@
                    
 
                 }
+                else if(liczba<5){
+                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsca"
+                    var napis2="Rezerwuję te miejsca"
+                    var napis3= ""
+                   
+
+                }
 
 
                 else{
-                    var napis1= "Wybrałeś" + " " + liczba + " " + "miejsce" 
-                    var napis2= "Rezerwuję to miejsce"
+                    var napis1= "Wybrałeś" + " " + liczba + " " + "miejsc" 
+                    var napis2= "Rezerwuję te miejsca"
                     var napis3=""
                 }
                
@@ -265,4 +288,3 @@
     
     
 }
-

@@ -47,7 +47,7 @@ function pierwsza(){
     document.getElementById("druga line").style.visibility="hidden"
    
     document.getElementById("trzecia line").style.visibility="hidden"
-    document.getElementById('wybranaGodzina').innerHTML = " godzina 09:00" 
+    document.getElementById('wybranaGodzina').innerHTML = " godzina 11:00" 
 
 }
 function druga(){
@@ -55,14 +55,14 @@ function druga(){
     document.getElementById("druga line").style.visibility="hidden"
     document.getElementById("pierwsza line").style.visibility="hidden"
     document.getElementById("trzecia line").style.visibility="hidden"
-    document.getElementById('wybranaGodzina').innerHTML = " godzina 15:00"
+    document.getElementById('wybranaGodzina').innerHTML = " godzina 16:00"
 }
 function trzecia(){
   
     document.getElementById("trzecia line").style.visibility="hidden"
     document.getElementById("druga line").style.visibility="hidden"
     document.getElementById("pierwsza line").style.visibility="hidden"
-    document.getElementById('wybranaGodzina').innerHTML = "  godzina 20:00"
+    document.getElementById('wybranaGodzina').innerHTML = "  godzina 21:00"
 }
 
 function tomy() {
@@ -182,25 +182,40 @@ function cinemaKrak() {
 
         element.addEventListener("click", function () {
             if (element.style.backgroundColor == "red") {
+                document.getElementById("pierwsza line").style.visibility="hidden"
+              document.getElementById("druga line").style.visibility="hidden"
+             
+              document.getElementById("trzecia line").style.visibility="hidden"
+
                 element.style.backgroundColor = "transparent"
                 sum = sum - 15;
                 var liczba=sum/15;
-                if(liczba>1){
-                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsca"
-                    var napis2= "Rezerwuję te miejsca"
+                if(liczba==1){
+                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsce"
+                    var napis2= "Rezerwuję to miejsce"
                     var napis3=""
                 }
+                
+
+
                 else if(liczba==0){
                     var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsc"
                     var napis3= "Wybierz miejsce"
                     var napis2=""
                   
                 }
+                else if(liczba<5){
+                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsca"
+                    var napis2= "Rezerwuję te miejsca"
+                    var napis3=""
+                 
+
+                }
 
 
                 else{
-                    var napis1= "Wybrałeś" + " " + liczba + " " + "miejsce" 
-                    var napis2= "Rezerwuję to miejsce"
+                    var napis1= "Wybrałeś" + " " + liczba + " " + "miejsc" 
+                    var napis2= "Rezerwuję te miejsca"
                     var napis3=""
                 }
                
@@ -211,6 +226,7 @@ function cinemaKrak() {
                 document.getElementById("wrapper1").style.visibility = "visible"
                
             } else {
+                
         
                 element.style.backgroundColor = "red"
                 
@@ -218,9 +234,9 @@ function cinemaKrak() {
                
                 sum = sum + 15;
                 var liczba=sum/15;
-                if(liczba>1){
-                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsca"
-                    var napis2= "Rezerwuję te miejsca"
+                if(liczba==1  ){
+                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsce"
+                    var napis2= "Rezerwuję to miejsce"
                     var napis3=""
                 }
                 else if(liczba==0){
@@ -230,11 +246,18 @@ function cinemaKrak() {
                    
 
                 }
+                else if(liczba<5){
+                    var napis1= "Wybrałeś" + " " + " " + liczba + " " + "miejsca"
+                    var napis2="Rezerwuję te miejsca"
+                    var napis3= ""
+                   
+
+                }
 
 
                 else{
-                    var napis1= "Wybrałeś" + " " + liczba + " " + "miejsce" 
-                    var napis2= "Rezerwuję to miejsce"
+                    var napis1= "Wybrałeś" + " " + liczba + " " + "miejsc" 
+                    var napis2= "Rezerwuję te miejsca"
                     var napis3=""
                 }
                
@@ -267,4 +290,3 @@ function cinemaKrak() {
     
     
 }
-
