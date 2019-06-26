@@ -140,7 +140,8 @@ kup.addEventListener("click", function(){
     document.querySelector('.wrapper1').style.visibility =  "visible"
 
     document.getElementById("div2").style.display = "none"
-    document.getElementById('kupbilet').innerHTML="Zaloguj sie, aby kupić bilet/y"
+    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
 })
 
 }

@@ -13,14 +13,20 @@ html {
     font-family: 'Raleway', sans-serif;
     max-width: 100%;
     background-color: rgb(165, 206, 245);
-    max-height: 100%;
+    max-height: 100;
     margin: 0;
     padding: 0;
     position: relative;
+  
+  
+
+    
     /* background-image: url( corgi.jpeg);
     background-repeat: no-repeat; */
 
 }
+     
+
 
 #tlo img {
     width: 90%;
@@ -29,10 +35,10 @@ html {
 
 }
 #tlo{
-    padding: 10px 0;
+   padding:30px 0;
     display: grid;
     grid-template-columns: 33% 33% 33% ;
-    grid-gap: 10px;
+    grid-gap: 20px;
    
 
 }
@@ -45,11 +51,12 @@ html {
 
 
 .wrapper {
-    padding: 20px 0;
+ 
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     grid-gap: 10px;
-    font-size: 1.8rem;
+
+ 
 
 
 
@@ -57,9 +64,10 @@ html {
 
 .wrapper a {
     text-decoration: none;
-    color: black;
-    font-family: 'Aguafina Script', cursive;
-    font-family: 'Indie Flower', cursive;
+   color:black;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.6rem;
+   
 }
 
 .wrapper a:hover {
@@ -103,7 +111,7 @@ html {
 #jumbo {
 
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
     left: 0;
     /* position: absolute;
             z-index: 0; */
@@ -387,6 +395,12 @@ padding-bottom:30px;
     #div2{
         width:100%;
         height: 100%;
+    }
+    .wrapper a {
+        font-size:1.4em;
+    }
+    #rezerwuje{
+        font-size:1em;
     }
   } 
  

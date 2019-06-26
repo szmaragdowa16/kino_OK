@@ -44,7 +44,7 @@ function pierwsza(){
     document.getElementById("druga line").style.visibility="hidden"
    
     document.getElementById("trzecia line").style.visibility="hidden"
-    document.getElementById('wybranaGodzina').innerHTML = " godzina 10:00" 
+    document.getElementById('wybranaGodzina').innerHTML = " godzina 11:00" 
 
 }
 function druga(){
@@ -52,7 +52,7 @@ function druga(){
     document.getElementById("druga line").style.visibility="hidden"
     document.getElementById("pierwsza line").style.visibility="hidden"
     document.getElementById("trzecia line").style.visibility="hidden"
-    document.getElementById('wybranaGodzina').innerHTML = " godzina 15:00"
+    document.getElementById('wybranaGodzina').innerHTML = " godzina 13:00"
 }
 function trzecia(){
   

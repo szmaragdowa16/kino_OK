@@ -62,7 +62,7 @@ function trzecia(){
     document.getElementById("trzecia line").style.visibility="hidden"
     document.getElementById("druga line").style.visibility="hidden"
     document.getElementById("pierwsza line").style.visibility="hidden"
-    document.getElementById('wybranaGodzina').innerHTML = "  godzina 21:00"
+    document.getElementById('wybranaGodzina').innerHTML = "godzina 21:00"
 }
 
 function tomy() {
@@ -115,13 +115,14 @@ function caleszczescie() {
     var kup=document.getElementById('kup')
 kup.addEventListener("click", function(){
     document.getElementById('tomy').style.visibility = "hidden"
-    document.getElementById('caleszczescie').style.visibility = "hidden"
+    document.getElementById('jakwytresowac').style.visibility = "hidden"
 
  
     document.querySelector('.wrapper1').style.visibility =  "visible"
 
     document.getElementById("div2").style.display = "none"
-    document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+    document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
 })
 }
 

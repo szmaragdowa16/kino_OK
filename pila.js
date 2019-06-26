@@ -46,7 +46,7 @@
             document.getElementById("druga line").style.visibility="hidden"
            
             document.getElementById("trzecia line").style.visibility="hidden"
-            document.getElementById('wybranaGodzina').innerHTML = " godzina 11:00" 
+            document.getElementById('wybranaGodzina').innerHTML = " godzina 10:00" 
         
         }
         function druga(){
@@ -54,14 +54,14 @@
             document.getElementById("druga line").style.visibility="hidden"
             document.getElementById("pierwsza line").style.visibility="hidden"
             document.getElementById("trzecia line").style.visibility="hidden"
-            document.getElementById('wybranaGodzina').innerHTML = " godzina 13:00"
+            document.getElementById('wybranaGodzina').innerHTML = " godzina 14:00"
         }
         function trzecia(){
           
             document.getElementById("trzecia line").style.visibility="hidden"
             document.getElementById("druga line").style.visibility="hidden"
             document.getElementById("pierwsza line").style.visibility="hidden"
-            document.getElementById('wybranaGodzina').innerHTML = "  godzina 19:00"
+            document.getElementById('wybranaGodzina').innerHTML = "  godzina 21:00"
         }
         
         
@@ -124,7 +124,8 @@
               document.querySelector('.wrapper1').style.visibility =  "visible"
           
               document.getElementById("div2").style.display = "none"
-              document.getElementById('kup').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('rezerwuje').innerHTML="Zaloguj sie, aby kupić bilet/y"
+              document.getElementById('kup').style.visibility="hidden"
           })
         }
         function cinemaPila() {
