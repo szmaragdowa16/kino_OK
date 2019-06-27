@@ -129,7 +129,7 @@
           })
         }
         function cinemaPila() {
-            var iloscKolumn = 7;
+            var iloscKolumn = 6;
             var iloscWierszy = 5;
             var napis = "";
     var img = "<svg></svg>"
