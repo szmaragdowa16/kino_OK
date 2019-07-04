@@ -5,38 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Projekt kino</title>
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
-
 <body onload="cityKat()">
-
-    <a href="http://127.0.0.1:5500/katowice.html"><img src="strzalka1.png" id="strzalka" alt="wróć"></a>
-    <img src="jumbo.jpeg" alt="" id='jumbo'>
+    <a href="katowice.html"><img src="picture/strzalka1-min.png" id="strzalka" alt="wróć"></a>
+    <img src="picture/jumbo-min.jpeg" alt="" id='jumbo'>
     <div id="log"></div>
-
-    <!-- <div id='container'>
-                                <div id="zalogowany"></div>
-                            <div class='wrapper1'>
-                                    <div id="test"></div>
-                                    <input type="password" name="name" id="name" placeholder="wpisz hasło" >
-                                    <img src="uzytkownik.jpg" alt="" id='uzytkownik'>
-                                    <div id='nameinfo' class='color'></div><br>
-                                  
-                                    <input type="text" name="email" id="email" placeholder="wpisz E-mail"/> 
-                                    <img src="email.jpg" alt="" id ="email1">
-                                    <div id='emailinfo' class='color'></div>
-                                    <input type="submit" value="zaloguj się" id='button' onclick="validate()" >
-                                    <img src="zaloguj.jpg" alt="" id="zaloguj">
-                                  
-                                    <br>
-                                   
-                                    
-                                </div>  -->
-
     <div id="kat" class='box'>Katowice</div>
-
     <div id=city_choose>
         <p id='seans'></p>
         <p id="jeden"></p>
@@ -44,20 +21,13 @@
         <p id="jeden"></p>
         <p id="jeden"></p></br></br>
     </div>
-
     <div id="containerPoz">
         <div id="corgi" onclick="corgi()"></div>
         <div id="mia" onclick="mia()"></div>
         <div id="jakwytresowac1" onclick="jakwytresowac1()"></div>
-
-
     </div>
-
     <div id="podsumowanie">
-
-
-     
-
+          <!-- wybor godziny -->
             <div id="wybranyfilm"></div>
             <div id="wybranaGodzina"></div>
             <div id="godziny">
@@ -66,75 +36,31 @@
                 <span id="trzecia line" onclick="cinemaKat(), trzecia()">19:00</span>
                 <div id="godzina"></div>
             </div>
-
-
             <div id="cena"></div>
-        </div>
-
-
-    
-         
+        </div>  
             <div id="rezerwuje"></div>
             <div id="napis"></div><br>
             <div id="kup"></div>
             <div id="miejscezero"></div>
-            <div id="div2"></div>
-
-
-
-           
+            <div id="div2"></div> 
             <div id="kupbilet"></div>
-          
-
-
             <div class='wrapper1'>
-
-
-
                 <div id="zalogowany"></div>
-
                 <input type="password" name="name" id="name" placeholder="wpisz hasło">
-
-
-
                 <input type="text" name="email" id="email" placeholder="wpisz e-mail" />
-
-
-
                 <button type="button" class="btn btn-primary" value="zaloguj się" id='button'
                     onclick="validate()">zaloguj
                     się</button>
-
                 <br>
                 <div id="test"></div>
-
-
-
 </div>
-
-
-
-
 <div id="danedopodsumy"></div>
-<!-- <a href="http://127.0.0.1:5500/logowanie.html" id="kup"></a> -->
-
-
-
-
-<!-- <div id="podsuma"></div> -->
-
-
-
 </div>
 <div id="poz"></div>
-
     <svg width="" height="" id="kwadrat"></svg>
-
-    <script src="json.js"></script>
-
-    <script src="katowice.js"></script>
-    <script src="logowanie.js"></script>
-
+    <script src="js/json.js"></script>
+    <script src="js/katowice.js"></script>
+    <script src="js/logowanie.js"></script>
 </body>
 
 </html>

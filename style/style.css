@@ -1,0 +1,295 @@
+body,
+html {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  max-width: 100%;
+  background-color: #a5cef5;
+  max-height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#tlo {
+  padding-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 20px;
+}
+
+#tlo img {
+  width: 90%;
+}
+
+#strzalka {
+  max-width: 5%;
+  position: absolute;
+  left: 0;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 24% 24% 24% 24%;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 10px;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.6rem;
+}
+
+.wrapper a:hover {
+  color: #2877ee;
+}
+
+#jakwytresowac2 {
+  max-width: 100%;
+  height: auto;
+}
+
+.noactive {
+  opacity: .5;
+}
+
+.active {
+  width: 80%;
+}
+
+#container {
+  max-width: 100%;
+  padding: 0;
+}
+
+#jeden {
+  font-size: 24px;
+}
+
+#jumbo {
+  max-width: 100%;
+  max-height: 100%;
+  left: 0;
+  /* position: absolute;
+            z-index: 0; */
+}
+
+#log {
+  position: absolute;
+  top: 10px;
+  left: 80%;
+  font-size: 1.1rem;
+}
+
+#log img {
+  max-width: 15%;
+}
+
+#test {
+  padding-top: 30px;
+  font-size: 22px;
+  color: red;
+}
+
+#seans {
+  font-size: 22px;
+  height: 60px;
+}
+
+.wrapper1 {
+  visibility: hidden;
+  /* display: grid;
+            
+             grid-template-columns: 24% 24% 24% 24%;
+             grid-gap: 10px; */
+  /* margin-top:20%; */
+}
+
+#opis {
+  z-index: 2;
+}
+
+#popkorn {
+  max-width: 20%;
+  position: absolute;
+  left: 10%;
+}
+
+#zalogowany {
+  font-style: italic;
+  font-size: 28px;
+  color: green;
+}
+
+#zalogowany img {
+  max-width: 10%;
+  margin-top: 30px;
+}
+
+img {
+  max-width: 80vh;
+  height: auto;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+#div2 {
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+
+input {
+  width: 150px;
+  padding: 5px;
+  height: 30px;
+  font-size: 14px;
+}
+
+input #button {
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+}
+
+#rezerwuj {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 20px;
+  position: relative;
+}
+
+#welcome {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+#containerPoz {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#containerPoz img {
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+  float: left;
+  padding: 1%;
+}
+
+.box {
+  border-bottom: solid 1px #2877ee;
+  font-size: 36px;
+  color: red;
+}
+
+#wybranaGodzina {
+  font-size: 1.2em;
+  padding-top: 20px;
+}
+
+span {
+  padding: 20px 10px;
+  font-size: 1.1em;
+}
+
+#all {
+  visibility: hidden;
+}
+
+#cena {
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+#napis {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: grey;
+}
+
+#wybranyfilm {
+  font-size: 26px;
+  margin: 0px 0;
+}
+
+#kup {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+}
+
+#kup:hover {
+  color: #2877ee;
+  font-weight: 800;
+}
+
+#rezerwuje {
+  font-size: 1.2em;
+}
+
+#miejscezero {
+  font-size: 1.2em;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#godziny {
+  visibility: hidden;
+  font-size: 2.2em;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#godziny span:hover {
+  color: #2877ee;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  svg {
+    max-width: 20px;
+    max-height: 20px;
+  }
+  #godziny {
+    font-size: 1.4em;
+  }
+  #jeden span {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #godziny {
+    font-size: 0.8em;
+  }
+  #jeden span {
+    font-size: 0.8em;
+  }
+  #div2 {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper a {
+    font-size: 1.4em;
+  }
+  #rezerwuje {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
