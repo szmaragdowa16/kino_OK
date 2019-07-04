@@ -1,17 +1,12 @@
 function cityPoz() {
-
     var mydata = JSON.parse(filmPoz);
-
     // ?sprawdzamy ile mamy obiektów
     var liczba = Object.keys(mydata).length
     var img1 = "<img src=picture/kurier.jpeg>"
     var img2 = "<img src=picture/marwel.jpeg>"
     var img3 = "<img src=picture/ciemno.jpeg>"
-
     for (var i = 0; i < liczba; i++) {
         if (mydata[i].city == 'Poznań') {
-
-
             var li = document.createElement('span');
             // wypelniam nowo utworzony element trascia
             li.innerText = mydata[i].title + " " + "/"
@@ -26,7 +21,6 @@ function cityPoz() {
         }
     }
 }
-
 function pierwsza() {
     document.getElementById("pierwsza line").style.color = "black"
     document.getElementById("pierwsza line").style.visibility = "hidden"
@@ -60,13 +54,9 @@ function kurier() {
         document.getElementById("div2").style.display = "none"
         document.getElementById('rezerwuje').innerHTML = "Zaloguj sie, aby kupić bilet/y"
         document.getElementById('kup').style.visibility = "hidden"
-
     })
 }
-
-
 function marwel() {
-
     document.getElementById('godziny').style.visibility = " visible"
     document.getElementById('wybranyfilm').innerHTML = " Wybrałeś film: KAPITAN MARVEL"
     document.getElementById('marwel').style.opacity = "1"
@@ -81,9 +71,7 @@ function marwel() {
         document.getElementById('rezerwuje').innerHTML = "Zaloguj sie, aby kupić bilet/y"
         document.getElementById('kup').style.visibility = "hidden"
     })
-
 }
-
 function ciemno() {
     document.getElementById('godziny').style.visibility = " visible"
     document.getElementById('wybranyfilm').innerHTML = "Wybrałeś film: CIEMNO PRAWIE NOC"
@@ -99,12 +87,9 @@ function ciemno() {
         document.getElementById('rezerwuje').innerHTML = "Zaloguj sie, aby kupić bilet/y"
         document.getElementById('kup').style.visibility = "hidden"
     })
-
 }
 function cinemaPoznan() {
-
     // ?sprawdzamy ile mamy obiektów
-    // var liczba = Object.keys(mydata).length
     var iloscKolumn = 5;
     var iloscWierszy = 4;
     var napis = "";
@@ -125,14 +110,11 @@ function cinemaPoznan() {
     for (var i = 0; i < iloscWierszy; i++) {
         for (var j = 0; j < iloscKolumn; j++) {
             napis += tablica[i][j];
-
         }
         napis += '<br>';
     }
     //wyświetlenie napisu na stronie
-
     document.getElementById("kwadrat").style.display = "none"
-
     document.getElementById("div2").innerHTML = napis;
     document.getElementById("napis").innerHTML = "wybierz miejsce";
     document.getElementById("napis").style.fontSize = "1.3em"

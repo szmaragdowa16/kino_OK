@@ -1,5 +1,4 @@
 function validate() {
-
     var mydata = JSON.parse(login);
     var liczba = Object.keys(mydata).length
     for (var i = 0; i < liczba; i++) {

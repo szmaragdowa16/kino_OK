@@ -2,8 +2,7 @@ $max-width:100%;
 $max-height:auto;
 $padding:0;
 $color_hover:#2877ee;
-
-
+$cursor:pointer;
 body,
 html {
   text-align: center;
@@ -15,7 +14,6 @@ html {
   padding: $padding;
   position: relative;
 }
-
 #tlo {
   padding-top: 10px;
   display: -ms-grid;
@@ -27,107 +25,75 @@ html {
     width: 90%;
   }
 }
-
 #strzalka {
   max-width: 5%;
   position: absolute;
   left: 0;
 }
-
 .wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 24% 24% 24% 24%;
       grid-template-columns: 24% 24% 24% 24%;
   grid-gap: 10px;
-
-
 a {
   text-decoration: none;
   color: black;
   font-family: 'Zilla Slab', serif;
   font-size: 1.6rem;
-
-
 &:hover {
   color: $color_hover;
 }
 }
 }
-
 #jakwytresowac2 {
   max-width: 100%;
   height: auto;
 }
-
-.noactive {
-  opacity: .5;
-}
-
 .active {
   width: 80%;
 }
-
-
 #container {
   max-width: 100%;
   padding: 0;
 }
-
 #jeden {
   font-size: 24px;
 }
-
 #jumbo {
   max-width: 100%;
   max-height: 100%;
   left: 0;
-  /* position: absolute;
-            z-index: 0; */
 }
-
 #log {
   position: absolute;
   top: 10px;
   left: 80%;
   font-size: 1.1rem;
-
-
 img {
   max-width: 15%;
 }
 }
-
 #test {
   padding-top: 30px;
   font-size: 22px;
   color: red;
 }
-
 #seans {
   font-size: 22px;
   height: 60px;
 }
-
 .wrapper1 {
   visibility: hidden;
-  /* display: grid;
-            
-             grid-template-columns: 24% 24% 24% 24%;
-             grid-gap: 10px; */
-  /* margin-top:20%; */
 }
-
 #opis {
   z-index: 2;
 }
-
 #popkorn {
   max-width: 20%;
   position: absolute;
   left: 10%;
 }
-
 #zalogowany {
   font-style: italic;
   font-size: 28px;
@@ -136,14 +102,11 @@ img {
     max-width: 10%;
     margin-top: 30px;
   }
-
 }
-
 img {
   max-width: 80vh;
   height: auto;
 }
-
 h2 {
   font-size: 3em;
 }
@@ -152,14 +115,13 @@ h2 {
   height: 100%;
   float: right;
 }
-
 input {
   width: 150px;
   padding: 5px;
   height: 30px;
   font-size: 14px;
 #button {
-  cursor: pointer;
+  cursor: $cursor;
   width: 100px;
   height: 50px;
 }
@@ -182,11 +144,10 @@ input {
 #containerPoz {
     width: 80%;
     margin: 0 auto;
-  
 img {
   width: 30%;
   height: auto;
-  cursor: pointer;
+  cursor: $cursor;
   float: left;
   padding: 1%;
 }
@@ -224,7 +185,7 @@ span {
   text-decoration: none;
   font-size: 1.2em;
   color: black;
-  cursor: pointer;
+  cursor: $cursor;
   width: 100%;
   height: auto;
   &:hover {
@@ -245,13 +206,12 @@ span {
   visibility: hidden;
   font-size: 2.2em;
   margin-top: 20px;
-  cursor: pointer;
+  cursor: $cursor;
 span:hover {
   color:$color_hover;
-  cursor: pointer;
+  cursor: $cursor;
 }
 }
-
 @media screen and (max-width: 800px) {
   svg {
     max-width: 20px;
@@ -264,7 +224,6 @@ span:hover {
     font-size: 1.2em;
   }
 }
-
 @media screen and (max-width: 380px) {
   #godziny {
     font-size: 0.8em;
@@ -281,6 +240,10 @@ span:hover {
   }
   #rezerwuje {
     font-size: 1em;
+  }
+  input{
+    display: block;
+    margin:0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

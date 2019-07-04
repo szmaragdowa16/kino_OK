@@ -1,5 +1,4 @@
 function cityKrak() {
-
     var mydata = JSON.parse(filmPoz);
     var liczba = Object.keys(mydata).length
     var img1 = "<img src= picture/tomy.jpeg>"

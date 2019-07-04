@@ -1,16 +1,11 @@
 function cityKat() {
     var mydata = JSON.parse(filmPoz);
-    // document.getElementById('kat').style.color = 'red';
-    // document.getElementById('kat').style.fontSize = '32px';
-
     // ?sprawdzamy ile mamy obiektów
     var liczba = Object.keys(mydata).length
     var img1 = "<img src= picture/corgi.jpeg>"
     var img2 = "<img src= picture/mia.jpeg>"
     var img3 = "<img src= picture/jakwytresowac.jpeg>"
-
     for (var i = 0; i < liczba; i++) {
-
         if (mydata[i].city == 'Katowice') {
             var li = document.createElement('span');
             // wypelniam nowo utworzony element trascia
@@ -28,9 +23,7 @@ function cityKat() {
     }
     return false
 }
-
 function pierwsza() {
-
     document.getElementById("pierwsza line").style.color = "black"
     document.getElementById("pierwsza line").style.visibility = "hidden"
     document.getElementById("pierwsza line").style.cursor = "text"
